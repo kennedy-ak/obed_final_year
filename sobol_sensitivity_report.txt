@@ -1,0 +1,162 @@
+
+SOBOL SENSITIVITY ANALYSIS REPORT
+Truck Production Prediction Model
+Generated: 2025-05-28 09:57:18
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+This report presents the results of a Sobol sensitivity analysis conducted on the
+best-performing truck production prediction model. The analysis investigates how
+each operational parameter influences production output and identifies critical
+factors for operational optimization.
+
+Best Model Performance:
+• Model: Base_ELM
+• R² Score: 0.9889
+• MAPE: 19.14%
+• VAF: 98.89257266961341
+• NASH: 0.9889241332560899
+
+================================================================================
+METHODOLOGY
+================================================================================
+
+Sobol sensitivity analysis is a variance-based global sensitivity analysis method
+that quantifies the contribution of each input parameter to the output variance.
+
+Key Metrics:
+• First-order indices (S1): Individual parameter effects
+• Total-order indices (ST): Total effects including interactions
+• Interaction effects (ST-S1): Parameter interaction strength
+
+Parameter Ranges Analyzed:
+• Truck Model         : 0        - 4
+• Nominal Tonnage     : 50       - 200
+• Material Type       : 0        - 2
+• Fixed Time          : 1        - 20
+• Variable Time       : 0.5      - 15
+• Number of Loads     : 1        - 100
+• Cycle Distance      : 0.1      - 20
+
+================================================================================
+SENSITIVITY ANALYSIS RESULTS
+================================================================================
+
+FIRST-ORDER SENSITIVITY INDICES (S1):
+Individual parameter effects on production output
+
+• Truck Model         : -0.0019 ± 0.0078
+• Nominal Tonnage     : 0.0064 ± 0.0180
+• Material Type       : 0.0006 ± 0.0096
+• Fixed Time          : 0.0142 ± 0.0165
+• Variable Time       : 0.0081 ± 0.0168
+• Number of Loads     : 0.7562 ± 0.0714
+• Cycle Distance      : 0.1372 ± 0.0407
+
+TOTAL-ORDER SENSITIVITY INDICES (ST):
+Total effects including parameter interactions
+
+• Truck Model         : 0.0082 ± 0.0011
+• Nominal Tonnage     : 0.0445 ± 0.0066
+• Material Type       : 0.0126 ± 0.0021
+• Fixed Time          : 0.0425 ± 0.0051
+• Variable Time       : 0.0333 ± 0.0051
+• Number of Loads     : 0.8075 ± 0.0752
+• Cycle Distance      : 0.2002 ± 0.0277
+
+================================================================================
+PARAMETER RANKING BY SENSITIVITY
+================================================================================
+
+Ranking based on total-order sensitivity indices (ST):
+
+1. Number of Loads      (ST: 0.8075, S1: 0.7562, Interaction: 0.0512)
+2. Cycle Distance       (ST: 0.2002, S1: 0.1372, Interaction: 0.0630)
+3. Nominal Tonnage      (ST: 0.0445, S1: 0.0064, Interaction: 0.0381)
+4. Fixed Time           (ST: 0.0425, S1: 0.0142, Interaction: 0.0283)
+5. Variable Time        (ST: 0.0333, S1: 0.0081, Interaction: 0.0252)
+6. Material Type        (ST: 0.0126, S1: 0.0006, Interaction: 0.0120)
+7. Truck Model          (ST: 0.0082, S1: -0.0019, Interaction: 0.0101)
+
+================================================================================
+INTERPRETATION AND INSIGHTS
+================================================================================
+
+KEY FINDINGS:
+
+1. Most Critical Parameter: Number of Loads
+   • Highest total sensitivity: 0.8075
+   • This parameter has the strongest influence on production output
+   • Priority focus for operational optimization
+
+2. Model Behavior:
+   • Total first-order effects: 0.921
+   • Maximum interaction effect: 0.0630
+   • Low parameter interactions
+   • Predominantly linear relationships
+
+3. Parameter Interactions:
+   • Number of Loads: Interaction effect = 0.0512
+   • Cycle Distance: Interaction effect = 0.0630
+
+================================================================================
+OPERATIONAL RECOMMENDATIONS
+================================================================================
+
+Based on the sensitivity analysis results, the following recommendations are made
+for mining operations:
+
+HIGH PRIORITY PARAMETERS:
+• Number of Loads (ST: 0.8075)
+  - Optimize load planning and scheduling strategies
+  - Implement dynamic load balancing systems
+• Cycle Distance (ST: 0.2002)
+  - Optimize haul routes and transportation planning
+  - Consider route optimization algorithms
+• Nominal Tonnage (ST: 0.0445)
+  - Optimize truck capacity utilization
+  - Review fleet composition strategies
+
+IMPLEMENTATION STRATEGY:
+
+1. IMMEDIATE ACTIONS (0-30 days):
+   • Focus optimization efforts on Number of Loads
+   • Establish monitoring systems for high-sensitivity parameters
+   • Conduct parameter-specific pilot studies
+
+2. SHORT-TERM IMPROVEMENTS (1-3 months):
+   • Implement control strategies for top 3 sensitive parameters
+   • Develop parameter interaction management protocols
+   • Train operators on critical parameter management
+
+3. LONG-TERM OPTIMIZATION (3-12 months):
+   • Develop integrated optimization system
+   • Implement automated parameter adjustment systems
+   • Establish continuous monitoring and feedback loops
+
+================================================================================
+CONCLUSIONS
+================================================================================
+
+The Sobol sensitivity analysis reveals that Number of Loads is the most critical
+parameter affecting truck production output (ST = 0.8075). The analysis 
+provides clear guidance for prioritizing optimization efforts and resource 
+allocation in mining operations.
+
+Model Performance Summary:
+• Total variance explained: 92.1%
+• Model confidence: High (R² = 0.9889)
+• Prediction accuracy: Excellent (MAPE = 19.14%)
+
+This analysis enables data-driven decision making for operational improvements
+and provides a scientific basis for parameter prioritization in mining operations.
+
+The Base_ELM model demonstrates excellent predictive performance and
+provides reliable sensitivity estimates for operational optimization.
+
+================================================================================
+END OF REPORT
+================================================================================
+        

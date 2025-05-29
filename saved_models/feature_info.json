@@ -1,0 +1,23 @@
+{
+  "feature_names": [
+    "truck_model_encoded",
+    "nominal_tonnage",
+    "material_type_encoded",
+    "fixed_time",
+    "variable_time",
+    "number_of_loads",
+    "cycle_distance"
+  ],
+  "truck_models": [
+    "CAT 777E",
+    "CAT 777F",
+    "CAT 785C",
+    "KOMATSU HD1500",
+    "KOMATSU HD785"
+  ],
+  "material_types": [
+    "High Grade",
+    "Low Grade",
+    "Waste"
+  ]
+}
